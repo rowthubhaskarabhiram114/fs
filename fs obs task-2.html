@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Styled Webpage</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+}
+
+/* Header */
+header{
+    background:#222;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:40px;
+    text-shadow:2px 2px 5px black;
+}
+
+header p{
+    margin-top:8px;
+}
+
+/* Navigation */
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    padding:8px 15px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#00c6ff;
+}
+
+/* Canvas Section */
+.canvas-section{
+    text-align:center;
+    padding:40px;
+}
+
+.svg-box{
+    background:white;
+    width:360px;
+    margin:auto;
+    border:3px solid #333;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 8px 15px rgba(0,0,0,.4);
+}
+
+/* Cards */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    color:#333;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 15px rgba(0,0,0,.3);
+}
+
+.card h3{
+    margin-bottom:10px;
+    font-family:Georgia,serif;
+}
+
+.card p{
+    margin-bottom:20px;
+}
+
+.card button{
+    background:#2575fc;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#6a11cb;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    text-align:center;
+    padding:18px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>My Styled Webpage</h1>
+<p>HTML & CSS Design</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="canvas-section">
+
+<h2>Drawing</h2>
+
+<div class="svg-box">
+
+<svg width="320" height="220">
+
+<!-- Rectangle -->
+<rect x="20" y="20" width="80" height="60" fill="skyblue"/>
+
+<!-- Circle -->
+<circle cx="170" cy="50" r="30" fill="orange"/>
+
+<!-- Line -->
+<line x1="240" y1="20" x2="300" y2="90"
+stroke="red" stroke-width="4"/>
+
+<!-- Name -->
+<text x="95" y="170"
+font-size="24"
+fill="blue">
+Your Name
+</text>
+
+</svg>
+
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>HTML5</h3>
+<p>HTML5 provides semantic elements and multimedia support.</p>
+<button>Learn More</button>
+</div>
+
+<div class="card">
+<h3>CSS3</h3>
+<p>CSS3 provides gradients, shadows, animations and transitions.</p>
+<button>Learn More</button>
+</div>
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Modern web pages are responsive and visually attractive.</p>
+<button>Learn More</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 My Styled Webpage | Designed by Your Name
+</footer>
+
+</body>
+</html>
