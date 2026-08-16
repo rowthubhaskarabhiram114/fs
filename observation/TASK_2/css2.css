@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Updated Button Styling */
+button {
+    padding: 12px 24px;
+    background-color: #0f766e; /* Deep Teal */
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(15, 118, 110, 0.3);
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #115e59; /* Darker Teal on hover */
+    box-shadow: 0 6px 8px -1px rgba(15, 118, 110, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#profile {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e8f0fe;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#profile h2 {
+    text-align: center;
+    margin-top: 0;
+}
