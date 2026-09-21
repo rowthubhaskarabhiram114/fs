@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 16px;
+      border-radius: 8px;
+      width: 250px;
+      font-family: sans-serif;
+    }
+    .highlight {
+      border-color: #2563eb;
+      background-color: #eff6ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="card" class="card">
+    <h2 id="card-title">Default Title</h2>
+    <img id="card-image" src="https://via.placeholder.com/100" alt="Placeholder">
+    <br><br>
+    <button id="update-btn">Update Card</button>
+  </div>
+
+  <script>
+    const button = document.getElementById('update-btn');
+
+    button.addEventListener('click', () => {
+      const card = document.getElementById('card');
+      const title = document.getElementById('card-title');
+      const image = document.getElementById('card-image');
+
+      // 1. Change Content
+      title.textContent = "Profile Loaded";
+
+      // 2. Change Attributes
+      image.setAttribute('src', 'https://via.placeholder.com/100/2563eb/ffffff');
+      image.setAttribute('alt', 'Updated Profile Picture');
+
+      // 3. Change Style & Classes
+      card.classList.add('highlight');
+      title.style.color = '#1e40af';
+    });
+  </script>
+</body>
+</html>
